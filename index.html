@@ -7,7 +7,7 @@
    <header class="main-header">
      <nav class="main-navigation">
        <a class="main-header-logo" href="#">
-         <img src="svg/nerds-logo.svg"  width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+         <img src="img/nerds-logo.svg"  width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
        </a>
        <ul class="site-navigation">
          <li> <a href="#">Студия</a></li>
@@ -16,7 +16,7 @@
          <li> <a href="#">Контакты</a></li>
        </ul>
        <ul class="basket-navigation">
-         <li class="backet-link"><a href="#">Корзина</a></li>
+         <li class="backet-link"><a href="backet.html">Корзина</a></li>
        </ul>
      </nav>
    </header>
@@ -40,19 +40,19 @@
   <section class="services">
     <ul class="services-list">
       <li class="services-item">
-        <a href="#" class="services-img"> <img src="img/illustration-1.jpg" width="300" height="146" alt="Компьютер"></a>
+        <a href="#" class="services-img"> <img src="img/illustration-1.jpg" width="300" height="146" alt="Интернет сайт"></a>
       <h3>Веб-сайты</h3>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
       <a href="#" class="button">Заказать</a>
       </li>
       <li class="services-item">
-        <a href="#" class="services-img"> <img src="img/illustration-2.jpg" width="300" height="146" alt="Телефон"></a>
+        <a href="#" class="services-img"> <img src="img/illustration-2.jpg" width="300" height="146" alt="Мобильное приложение"></a>
       <h3>Приложения</h3>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
       <a href="#" class="button">Заказать</a>
       </li>
       <li class="services-item">
-        <a href="#" class="services-img"> <img src="img/illustration-3.jpg" width="300" height="146" alt="Проектор"></a>
+        <a href="#" class="services-img"> <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентация"></a>
       <h3>Презентации</h3>
       <p>Вы даже не подозреваете, насколько вы изумительны!</p>
       <a href="#" class="button">Заказать</a>
@@ -107,8 +107,39 @@
        <b>Nёrds design studio</b> <br>
        191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8 <br>
        тел. +7 (812) 275-75-75
-       <a href="#" class="button"> Напишите нам</a>
+	          <a href="#" class="button"> Напишите нам</a>
      </p>
+	     <section class=" modal modal-write-to-us-form"> <!-- поп ап "напишите нам" -->
+		  <h2>Напишите нам</h2>
+		 		  <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
+		  <p>
+		  <label>Ваше имя:
+		  <input class="form-name" type="text" name="name" placeholder="Имя Фамилия" >
+		   </label>
+		  </p> 
+		  
+		   <p>
+		  <label> Ваш e-mail:
+		  <input class="form-mail" type="email"  name="email" placeholder="email@example.com">
+		  </label>
+		  </p>
+		  
+		     <p>
+		  <label>Текст письма:
+		  <textarea class="form-comment" name="comment" placeholder="В свободной форме"></textarea>
+		  </label>
+		  </p>
+		  <button class="button" type="submit">ОТПРАВИТЬ</buttom>
+		  </form>
+		
+        <button class="modal-close" type="button"> <!-- крестик зарытия попап -->
+          Закрыть
+        </button>
+		 </section>
+	 
+	 
+	 
+	 
      <div class="footer-social">
        <ul>
          <li> <a href="https://vk.com" class="social-button">Вконтакте</a></li>
