@@ -22,10 +22,117 @@
    </header>
    <main class="container">
      <h1 class="page-title">Магазин готовых шаблонов</h1>
-     <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+   
+        <section class="filters">
+ <h2 class="visually-hidden">Фильтр товаров</h2>
+  <form  action="https://echo.htmlacademy.ru" method="post">  <!-- форма в левом столбце -->
+  <fieldset>
+  <legend>СТОИМОСТЬ:</legend>
+  <input type="range" name="price-range" min="0" max="15000" step="1000">
+  <p>от 0  до 15000</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>СЕТКА:</legend>
+	<ul>
+	<li class="filter-option">
+	<label>
+	<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" checked>
+	Адаптивная
+	</label>
+	</li>
+	<li class="filter-option">
+	<label>
+	<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="static" >
+	Фискированная
+	</label>
+	</li>
+	<li class="filter-option">
+	<label>
+		<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="liquid" >
+	Резиновая</li>
+	</label>
+	</ul>
+  </fieldset>
+  
+  <fieldset>  
+  <legend>ОСОБЕННОСТИ:</legend>
+  <ul>
+	<li class="filter-option"> 
+	<label>
+		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+	Слайдер
+	</label>
+	</li>
+	<li class="filter-option"> 
+	<label>
+		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" >
+	Блок преимуществ
+	</label>
+	</li>
+			<li class="filter-option"> 
+	<label>
+		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+	Новости
+	</label>
+	</li>
+		<li class="filter-option"> 
+	<label>
+		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" >
+	Галерея
+	</label>
+	</li>
+		<li class="filter-option"> 
+	<label>
+		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" >
+	Корзина
+	</label>
+	</li>
+	</ul>
+  </fieldset>
+  <button type="submit" class="filter-button button">
+            Показать
+          </button>
+    </form>
+	<form  action="https://echo.htmlacademy.ru" method="post"> <!-- форма под хедером -->
+	<fieldset>
+	<legend> СОРТИРОВАТЬ:</legend> 
+	<ul>
+	<li> 
+	<label>
+	<input type="checkbox" class="box-price-selector visually-hidden" name="price-selector" checked> 
+	По цене
+	</label>
+	</li>
+	<li>
+		<label>
+	<input type="checkbox" class="box-type-selector visually-hidden" name="type-selector" > 
+	По типу
+		</label>
+	</li>
+	<li>
+	<label>
+	<input type="checkbox" class="box-name-selector visually-hidden" name="name-selector" > 
+	По названию
+	</label>
+	</li>	
+	<li> 
+	<label>
+	<button type="submit" class="button-decrease-selector visually-hidden" name="decrease-selector">
+	Убывание
+	</label>
+	</li>	
+	<li>
+	<label>
+	<button type="submit" class="button-increase-selector visually-hidden" name="increase-selector">
+	Возрастание
+	</label>
+	</li>	
+	</ul>
+	</fieldset>
+	</form>
       </section>
+	  
   <section class="catalog">
     <h2 class="visually-hidden">Список шаблонов сайтов</h2>
     <ul class="catalog-list">
