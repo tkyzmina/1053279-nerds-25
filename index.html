@@ -2,6 +2,9 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия «Нёрдс»</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
  <body>
    <header class="main-header">
@@ -36,6 +39,9 @@
     <b class="slider-header">Только ночь,только хардкор</b>
 <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
     </div>
+	<p>
+	<a href="#" class="button">Узнать больше</a>
+	</p>
   </section>
   <section class="services">
     <ul class="services-list">
@@ -49,13 +55,13 @@
         <a href="#" class="services-img"> <img src="img/illustration-2.jpg" width="300" height="146" alt="Мобильное приложение"></a>
       <h3>Приложения</h3>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-      <a href="#" class="button">Заказать</a>
+      <a href="#" class="button button-green">Заказать</a>
       </li>
       <li class="services-item">
         <a href="#" class="services-img"> <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентация"></a>
       <h3>Презентации</h3>
       <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-      <a href="#" class="button">Заказать</a>
+      <a href="#" class="button button-yellow">Заказать</a>
       </li>
     </ul>
   </section>
@@ -77,12 +83,12 @@
 
 <table>
   <tr>
-    <th>с 2004 года Любим точность во всем:</th>
+    <th class="table-heading">с 2004 года Любим точность во всем:</th>
   </tr>
-  <tr>
-      <td>146%</td>
-      <td>100%</td>
-      <td>50%</td>
+  <tr >
+      <td>146<sup>%</sup></td>
+      <td>100<sup>%</sup></td>
+      <td>50<sup>%</sup></td>
   </tr>
   <tr>
       <td> Уровень самоотдачи </td>
@@ -93,10 +99,10 @@
   </section>
   <section class="gallery">
     <ul class="gallery-list">
-      <li><a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-1.png" width="199" height="68" alt="логотип HTML-Academy"></a></li>
-        <li><a href="#"> <img src="img/logo-2.png" width="209" height="90" alt="логотип барбершоп Бородинский"></a></li>
-            <li><a href="#"> <img src="img/logo-3.png" width="185" height="52" alt="логотип проекта PINK"></a></li>
-              <li><a href="#"> <img src="img/logo-4.png" width="173" height="84" alt="логотип интернет-магазина Mishka"></a></li>
+      <li><a class="gallery-item" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-1.png" width="199" height="68" alt="логотип HTML-Academy"></a></li>
+        <li><a class="gallery-item" href="#"> <img src="img/logo-2.png" width="209" height="90" alt="логотип барбершоп Бородинский"></a></li>
+            <li><a class="gallery-item" href="#"> <img src="img/logo-3.png" width="185" height="52" alt="логотип проекта PINK"></a></li>
+              <li><a class="gallery-item" href="#"> <img src="img/logo-4.png" width="173" height="84" alt="логотип интернет-магазина Mishka"></a></li>
     </ul>
 
   </section>
@@ -112,13 +118,13 @@
 	     <section class=" modal modal-write-to-us-form"> <!-- поп ап "напишите нам" -->
 		  <h2>Напишите нам</h2>
 		 		  <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
-		  <p>
+		  <p class="form-item">
 		  <label>Ваше имя:
 		  <input class="form-name" type="text" name="name" placeholder="Имя Фамилия" >
 		   </label>
 		  </p> 
 		  
-		   <p>
+		   <p class="form-item">
 		  <label> Ваш e-mail:
 		  <input class="form-mail" type="email"  name="email" placeholder="email@example.com">
 		  </label>
@@ -126,7 +132,7 @@
 		  
 		     <p>
 		  <label>Текст письма:
-		  <textarea class="form-comment" name="comment" placeholder="В свободной форме"></textarea>
+		  <textarea class="form-comment " name="comment" placeholder="В свободной форме"></textarea>
 		  </label>
 		  </p>
 		  <button class="button" type="submit">ОТПРАВИТЬ</buttom>
@@ -141,7 +147,7 @@
 	 
 	 
      <div class="footer-social">
-       <ul>
+       <ul class="social-list">
          <li> <a href="https://vk.com" class="social-button">Вконтакте</a></li>
          <li> <a href="https://facebook.com" class="social-button">Facebook</a></li>
          <li> <a href="https://instagram.com" class="social-button">Instagram</a></li>
