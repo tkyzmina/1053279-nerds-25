@@ -159,18 +159,15 @@ body {
 }	 
 
 .gallery-item {
-  filter: alpha (Opacity=20);
-  opacity: 0.20;
+    opacity: 0.20;
 }
 
 .gallery-item:hover {
-  filter: alpha (Opacity=100);
-  opacity: 1;
+    opacity: 1;
 }
 
 .gallery-item:active{
-  filter: alpha (Opacity=10);
-  opacity: 0.10;
+   opacity: 0.10;
 }
 
 
@@ -199,7 +196,7 @@ body {
 }
 
 .social-list {
-		list-style: none;
+    list-style: none;
 }
 
 .footer-discount b {
@@ -213,4 +210,96 @@ body {
 	font-weight: 400;
     line-height: 22px;
 	color: #333333;
+}
+
+/* стили текста для catalog.html */
+.page-title {
+	font-size: 55px;
+	font-weight: 500;
+    line-height: 55px;
+	color: #000000;
+}
+.form-legend {
+	font-size: 18px;
+	font-weight: 700;
+    line-height: 30px;
+	color: #000000;
+}
+
+.filter-input {
+	font-size: 16px;
+	font-weight: 400;
+    line-height: 20px;
+	color: #333333;
+}
+.filter-option {
+	list-style: none;
+}
+
+fieldset {
+    border: 0;
+}
+.side-sort-legend {
+	font-size: 18px;
+	font-weight: 700;
+    line-height: 18px;
+	color: #000000;
+}
+.side-sort-list {
+	font-size: 14px;
+	font-weight: 400;
+    line-height: 18px;
+	color: #000000;
+	opacity: 0.30;
+	text-transform: uppercase;
+}
+
+.side-sort-list:hover {
+	opacity: 0.60;
+}
+
+.side-sort-list:active {
+	opacity: 1;
+}
+
+.catalog-item {
+	list-style: none;
+}
+.catalog-category {
+	font-size: 16px;
+	font-weight: 400;
+    line-height: 18px;
+	color: #666666;
+}
+
+.catalog-item-title {
+	font-size: 18px;
+	font-weight: 700;
+    line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.catalog-item-title:hover {
+	color: #ff6666;
+}
+.catalog-item-title:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.pagination-list { 
+    font-size: 16px;
+	font-weight: 500;
+    line-height: 18px;
+	text-transform: uppercase;
+    list-style:none;
+	}
+
+.pagination-item a {
+	color: #000000;
+}
+
+.pagination-item:active {
+	opacity: 0.3;
 }

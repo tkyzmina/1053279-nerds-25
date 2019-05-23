@@ -30,13 +30,13 @@
  <h2 class="visually-hidden">Фильтр товаров</h2>
   <form  action="https://echo.htmlacademy.ru" method="post">  <!-- форма в левом столбце -->
   <fieldset>
-  <legend>СТОИМОСТЬ:</legend>
+  <legend class="form-legend">СТОИМОСТЬ:</legend>
   <input type="range" name="price-range" min="0" max="15000" step="1000">
   <p>от 0  до 15000</p>
   </fieldset>
 
   <fieldset>
-    <legend>СЕТКА:</legend>
+    <legend class="form-legend">СЕТКА:</legend>
 	<ul>
 	<li class="filter-option">
 	<label>
@@ -59,7 +59,7 @@
   </fieldset>
   
   <fieldset>  
-  <legend>ОСОБЕННОСТИ:</legend>
+  <legend class="form-legend">ОСОБЕННОСТИ:</legend>
   <ul>
 	<li class="filter-option"> 
 	<label>
@@ -99,12 +99,12 @@
     </form>
 	 </section>
 	<div>
-	<p>СОРТИРОВАТЬ:</p>
-	<a href="#" >По цене</a>
-	<a href="#" >По типу</a>
-	<a href="#" >По названию</a>
-	<div>Индикатор перключ вниз<div>
-	<div>Индикатор перключ вверх<div>
+	<p class="side-sort-legend">СОРТИРОВАТЬ:</p>
+	<a href="#" class="side-sort-list">По цене</a>
+	<a href="#" class="side-sort-list">По типу</a>
+	<a href="#" class="side-sort-list">По названию</a>
+	<div class="side-sort-list">Индикатор переключ вниз</div>
+	<div class="side-sort-list">Индикатор перуключ вверх</div>
 	</div>
      
 	  
@@ -202,7 +202,7 @@
       </li>
     </ul>
     <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">Следующая</a></li>
@@ -223,19 +223,19 @@
 	  <section class=" modal modal-write-to-us-form"> <!-- поп ап "напишите нам" -->
 		  <h2>Напишите нам</h2>
 		 		  <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
-		  <p>
+		  <p class="form-item">
 		  <label>Ваше имя:
 		  <input class="form-name" type="text" name="name" placeholder="Имя Фамилия" >
 		   </label>
 		  </p> 
 		  
-		   <p>
+		   <p class="form-item">
 		  <label> Ваш e-mail:
 		  <input class="form-mail" type="email"  name="email" placeholder="email@example.com">
 		  </label>
 		  </p>
 		  
-		     <p>
+		     <p class="form-item">
 		  <label>Текст письма:
 		  <textarea class="form-comment" name="comment" placeholder="В свободной форме"></textarea>
 		  </label>
