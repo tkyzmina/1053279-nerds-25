@@ -8,23 +8,26 @@
 </head>
  <body>
    <header class="main-header">
-     <nav class="main-navigation">
+        
+	 <div class="container">
+	 <nav class="main-navigation">
        <a class="main-header-logo" href="#">
          <img src="img/nerds-logo.svg"  width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
        </a>
-       <ul class="site-navigation">
+	          <ul class="site-navigation">
          <li> <a href="#">Студия</a></li>
          <li> <a href="#">Клиенты</a></li>
          <li> <a href="catalog.html">Магазин</a></li>
          <li> <a href="#">Контакты</a></li>
        </ul>
-       <ul class="basket-navigation">
+       <ul class="backet-navigation">
          <li class="backet-link"><a href="backet.html">Корзина</a></li>
        </ul>
+	   </div>
      </nav>
-   </header>
-<main class="container">
+ 
   <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
+  <div class="container">
   <section class="advantages">
      <h2 class="visually-hidden">Преимущества</h2>
     <div class="slider">
@@ -43,6 +46,9 @@
 	<a href="#" class="button">Узнать больше</a>
 	</p>
   </section>
+  </div>
+   </header>
+     <main class="container">
   <section class="services">
     <ul class="services-list">
       <li class="services-item">
@@ -65,6 +71,7 @@
       </li>
     </ul>
   </section>
+  <div class="about-achievements">
   <section class="about">
     <p>Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
@@ -97,6 +104,7 @@
   </tr>
 </table>
   </section>
+  </div>
   <section class="gallery">
     <ul class="gallery-list">
       <li><a class="gallery-item" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-1.png" width="199" height="68" alt="логотип HTML-Academy"></a></li>
@@ -108,13 +116,15 @@
   </section>
 </main>
 
-   <footer class="main-footer">
+   <footer class="main-footer  container">
+    <div class="footer-contacts-map">
      <p class="footer-contacts"> <!--название нужно сразу заглавными БУКВАМИ набирать или потом стилями менять?-->
        <b>Nёrds design studio</b> <br>
        191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8 <br>
        тел. +7 (812) 275-75-75
 	          <a href="#" class="button"> Напишите нам</a>
      </p>
+	 </div>
 	     <section class=" modal modal-write-to-us-form"> <!-- поп ап "напишите нам" -->
 		  <h2>Напишите нам</h2>
 		 		  <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
@@ -145,7 +155,7 @@
 	 
 	 
 	 
-	 
+	 <div class="footer-social-discount">
      <div class="footer-social">
        <ul class="social-list">
          <li> <a href="https://vk.com" class="social-button">Вконтакте</a></li>
@@ -155,9 +165,9 @@
      </div>
      <p class="footer-discount">
        <b>Давайте дружить, это выгодно!</b>
-       Скидка 10% для друзей из социальных сетей.
+       <br>Скидка 10% для друзей из социальных сетей.
      </p>
-
+     </div>
    </footer>
 
 

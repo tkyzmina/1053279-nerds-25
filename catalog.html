@@ -6,9 +6,10 @@
 	<link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
- <body>
-   <header class="main-header">
-     <nav class="main-navigation">
+ <body class="inner-page">
+   <header class="main-header">     
+	  <div class="container">
+	  <nav class="main-navigation">
        <a class="main-header-logo" href="index.html">
          <img src="img/nerds-logo.svg"  width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
        </a>
@@ -18,15 +19,19 @@
          <li class="site-navigation-current"> <a href="catalog.html">Магазин</a></li>
          <li> <a href="#">Контакты</a></li>
        </ul>
-       <ul class="basket-navigation">
+       <ul class="backet-navigation">
          <li class="backet-link"><a href="backet.html">Корзина</a></li>
        </ul>
+	   </div>
      </nav>
+	 <div class="container">
+	    <h1 class="page-title">Магазин готовых шаблонов</h1>
+		</div>
    </header>
-   <main class="container">
-     <h1 class="page-title">Магазин готовых шаблонов</h1>
    
-        <section class="filters">
+   <main class="container">
+   <div class="catalog-columns">
+            <section class="filters">
  <h2 class="visually-hidden">Фильтр товаров</h2>
   <form  action="https://echo.htmlacademy.ru" method="post">  <!-- форма в левом столбце -->
   <fieldset>
@@ -98,13 +103,14 @@
           </button>
     </form>
 	 </section>
-	<div>
+	 <div class="wrapper-side-sort-catalog">
+	<div class="side-sort">
 	<p class="side-sort-legend">СОРТИРОВАТЬ:</p>
 	<a href="#" class="side-sort-list">По цене</a>
 	<a href="#" class="side-sort-list">По типу</a>
 	<a href="#" class="side-sort-list">По названию</a>
 	<div class="side-sort-list">Индикатор переключ вниз</div>
-	<div class="side-sort-list">Индикатор перуключ вверх</div>
+	<div class="side-sort-list">Индикатор переключ вверх</div>
 	</div>
      
 	  
@@ -201,19 +207,20 @@
           </p>
       </li>
     </ul>
+	
     <ul class="pagination-list">
         <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">Следующая</a></li>
       </ul>
-
-
+</div>
+</div>
   </section>
 
    </main>
 
-   <footer class="main-footer">
+   <footer class="main-footer container">
      <p class="footer-contacts"> <!--ВОПРОС:название нужно сразу заглавными БУКВАМИ набирать или потом стилями менять?-->
        <b>Nёrds design studio</b> <br>
        191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8 <br>
@@ -247,9 +254,9 @@
           Закрыть
         </button>
 		 </section>
-	 
+	 <div class="footer-social-discount">
      <div class="footer-social">
-       <ul>
+       <ul class="social-list">
          <li> <a href="https://vk.com" class="social-button">Вконтакте</a></li>
          <li> <a href="https://facebook.com" class="social-button">Facebook</a></li>
          <li> <a href="https://instagram.com" class="social-button">Instagram</a></li>
@@ -257,9 +264,9 @@
      </div>
      <p class="footer-discount">
        <b>Давайте дружить, это выгодно!</b>
-       Скидка 10% для друзей из социальных сетей.
+       <br>Скидка 10% для друзей из социальных сетей.
      </p>
-
+    </div>
    </footer>
 
 
