@@ -38,7 +38,7 @@ input[type="radio"].visually-hidden {
 }
   .main-header {
 	 width: 100%;
-	 margin-bottom: 80px;
+	 margin-bottom: 70px;
      background-color: #eeeeee;
   }
   
@@ -48,6 +48,7 @@ input[type="radio"].visually-hidden {
   .main-navigation {
 	 display: flex;	
      flex-direction: row;
+	 align-items: center;
 
 		  
 	  font-size: 16px;
@@ -55,8 +56,8 @@ input[type="radio"].visually-hidden {
 	  color: #000000;
 	  text-transform: uppercase;
 	  
-	  margin-bottom: 85px;
-	  padding-top: 50px;
+	  margin-bottom: 0;
+	  padding-top: 52px;
   }
   
   .inner-page .page-title {
@@ -66,7 +67,7 @@ input[type="radio"].visually-hidden {
 	  text-align: center;
   }
   .container {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
     padding: 0 20px;
 }
@@ -81,10 +82,10 @@ input[type="radio"].visually-hidden {
   }
   
   .backet-navigation {
-	 width: 100px;	 
+	 width: 120px;	 
 	 margin: 0px;
-	 padding:0px;
-	 margin-left:auto;
+	 padding: 0px;
+	 margin-left: auto;
 	  }
    
    
@@ -93,24 +94,30 @@ input[type="radio"].visually-hidden {
 	list-style: none;
   }
   
-.site-navigation a,
+.site-navigation a{
+	color: #000000;
+	display: block;
+	vertical-align: middle;
+	padding: 0px 25px;
+}
+
 .backet-navigation a {
 	color: #000000;
 	display: block;
 	vertical-align: middle;
-	padding: 0px 20px;
+	padding: 0px 16px;
 }
 
 .backet-navigation .backet-link {
 	position: relative;
-	padding-left: 50px;
+	padding-left: 30px;
 }
 .backet-link::before {
 	content: "";
 	
 	position: absolute;
 	top: 7px;
-    left: 26px;
+    left: 6px;
   
 	width:16px;
 	height: 18px;
@@ -138,9 +145,13 @@ input[type="radio"].visually-hidden {
 	line-height: 55px;
 	text-transform: uppercase;
 }	
+.site-navigation a:first-child {
+	padding-left: 19;
+}
+
 
 .main-header-logo {
-	margin-right: 200px;
+	margin-right: 184px;
 }
 .main-header-logo:hover {
 	filter: alpha (Opacity=80);
@@ -151,12 +162,12 @@ input[type="radio"].visually-hidden {
     opacity: 0.30;
 }
 .services {
-	margin-bottom:162px;
+	margin-bottom: 80px;
 }
 
 .services-list {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 	
 	margin: 0;
     padding: 0;
@@ -165,17 +176,32 @@ input[type="radio"].visually-hidden {
 
 .services-item{
 	text-align: left;
-	
+	margin-left: 100px;
 	width: 300px;
+}
+.services-item-fisrt  {
+		margin-left: 0px;
+}
+.services-img img {
+	margin: 0;
+    padding: 0;
+	margin-bottom: 18px;
 }
 .services-item h3 {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	
+	margin: 0;
+    padding: 0;
+	margin-bottom: 15px;
 }
-
+.services-item p{
+	margin: 0;
+    padding: 0;
+	margin-bottom: 32px;
+	width: 260px;
+}
 /* ____________________слайдер______________ */
 
 .slider {
@@ -235,7 +261,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item {
   display: none;
-  padding: 78px 0 80px 0;
+  padding: 65px 0 90px 0;
 }
 
 .slider-item:nth-child(1) {
@@ -284,16 +310,11 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.slider-item {
-  display: none;
-  padding: 78px 0 80px 0;
-}
-
 
 .slider-item h3 {
 	max-width: 600px;
 	margin: 0;
-	margin-bottom: 27px;
+	margin-bottom: 24px;
 	
 	font-size: 55px;
 	line-height: 55px;
@@ -302,7 +323,7 @@ input[type="radio"].visually-hidden {
 .slider-item p {
 	max-width: 430px;
 	margin: 0;
-	margin-bottom: 38px;
+	margin-bottom: 41px;
 }
 
 /* ______________________ */
@@ -310,27 +331,68 @@ input[type="radio"].visually-hidden {
 .about-achievements {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
     } 
 
 .about {
 	width: 660px;	
+	margin: 0;
+	padding: 0;
+	margin-top: 46px;
+}
+.about p{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 35px;
 }
 .achievements {
 		width: 360px;
+		padding-top: 10px;
 	}
-
+.about-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-.about p:first-child {
+.about-list li {
+	 position: relative;
+	margin-bottom: 25px;
+	padding-left: 38px;
+}
+.about-list li:before {
+	content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
+}
+.about-header{
 	font-size: 45px;
 	font-weight: 500;
     line-height: 45px;
 	color: #000000;
+	margin-bottom: 35px;
 	}
+	.line {		
+  width: 1160px;
+  height: 2px;
+
+  background: #eeeeee;
+  margin-bottom: 30px;
+	}
+	
 .about-servises h4 {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
 }
 
 .table-heading {
@@ -339,40 +401,69 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
 	color: #000000;
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding-left: 17px;
 }
 .achivements-numbers {
 	width: 100px;
+	margin-right: 18px;
+}
+.achivements-numbers p{
+	margin: 0;
+	padding: 0;
 }
 .achivements-numbers-wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 	}
 
    .achivements-numbers p:first-child   {
     list-style: none;
 	font-size: 45px;
 	font-weight: 700;
-    line-height: 10,06px;
+    line-height: 10px;
 	color: #000000;
+	margin-bottom: 35px;
+}
+.achivements-numbers p:last-child {
+	line-height: 18px;
 }
 .gallery-list {
 	list-style: none;
 		
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
+	align-items: center;
     margin: 0;
     padding: 0;
 }
+.gallery-list li {
+	position: relative;
+}
+.gallery-list li:after {
+content: "";
 
+  position: absolute;
+  top: 0px;
+  right: -60px;
+
+  width: 2px;
+  height: 52px;
+
+  background-color: #fb565a;
+} 
 .gallery {
-	margin-bottom: 80px;
+	margin-bottom: 35px;
+	margin-top: 45px;
 	}
 	
 .button {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 16px 0;
   
   font: inherit;
   font-size: 16px;
@@ -433,6 +524,11 @@ input[type="radio"].visually-hidden {
 
 .gallery-item {
     opacity: 0.20;
+	margin-left: 100px;
+}
+.gallery-list a:first-child{
+	margin-left: 30px;
+
 }
 
 .gallery-item:hover {
@@ -442,15 +538,20 @@ input[type="radio"].visually-hidden {
 .gallery-item:active{
    opacity: 0.10;
 }
-
+.main-footer {
+	margin-top: 80px;
+}
 
 .footer-contacts-map {
 	position: relative;
+	width: 1440px;
 	height: 415px;
 	background-image: url(../img/map-marker.png);
 	background-repeat: no-repeat; 
 	background-color: #eeeeee;
-	margin-bottom: 30px;
+	margin-bottom: 72px;
+	left: 50%;
+	margin-left: -720px;
 }
 .footer-contacts {
 position: absolute;
@@ -459,31 +560,37 @@ flex-direction: column;
 flex-wrap: wrap;
 padding-left: 50px;
 
-top: 60px;
+top: 50px;
 left: 140px;
 width: 270px;
 background-color: #ffffff;	
 }
 
 .footer-contacts h4 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight:700;
 	margin: 0px;
-	margin-bottom: 30px;
-	margin-top: 30px;
+	margin-bottom: 24px;
+	margin-top: 51px;
 	
 	text-transform: uppercase;
 }
 .footer-contacts p {
 	margin: 0px;
 	color: #666666;
+	line-height: 18px;
 	}
+	
 	.footer-contacts p:nth-child(3) {
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 	}
 .footer-contacts p:nth-child(4) {
-	margin-bottom: 40px;
+	margin-bottom: 37px;
 	}
 	.footer-contacts-button {
-		margin-bottom: 45px; 
+		width: 219px;
+			margin-bottom: 45px; 
 		}
 .social-list {
 	display: flex;
@@ -500,18 +607,26 @@ background-color: #ffffff;
 	font-weight: 700;
     line-height: 36px;
 	color: #000000;
+	margin-bottom: 10px;
 }
 .footer-discount {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
 	font-size: 16px;
 	font-weight: 400;
     line-height: 22px;
 	color: #333333;
 	
-	 width:760px; 
+	 width:900px; 
 	 margin: 0;
 	 margin-left: 140px; 
-	/*  не понимаю почему это маргин при изменении не работает? */
 }
+.footer-discount-social {
+	line-height: 22px;
+	margin: 0;
+}
+
 .social-button:hover {
   background-color: #e74246;
 }
@@ -523,6 +638,7 @@ background-color: #ffffff;
 }
 .footer-social-discount {
 	display: flex;
+	
 	margin-bottom: 70px;
 		}
 	
@@ -857,8 +973,7 @@ fieldset {
 
 .pagination-list { 
     display: flex;
-	flex-wrap: wpar;
-	 
+	flex-wrap: wpar;	 
     font-size: 16px;
 	font-weight: 500;
     line-height: 18px;
@@ -901,6 +1016,7 @@ fieldset {
 /* форма поп ап */
 
 .modal-write-to-us-form {
+	display: none;
 	position: fixed;
 	left: 240px;
 	bottom: 180px;
