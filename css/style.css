@@ -1415,3 +1415,6 @@ fieldset {
 .form-fieldset-bottom {
 	margin-bottom: 29px;
 }
+.yandex-map{
+border: none;
+}
