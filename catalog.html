@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Нёрдс»</title>
@@ -8,7 +7,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
 </head>
-
 <body class="inner-page">
     <header class="main-header">
         <div class="container">
@@ -20,7 +18,7 @@
                     <ul class="site-navigation">
                         <li> <a href="#">Студия</a></li>
                         <li> <a href="#">Клиенты</a></li>
-                        <li> <a href="catalog.html">Магазин</a></li>
+                        <li> <a class="site-navigation-current" href="catalog.html">Магазин</a></li>
                         <li> <a href="#">Контакты</a></li>
                     </ul>
                     <ul class="backet-navigation">
@@ -28,12 +26,9 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-        <div class="container">
-            <h1 class="page-title">Магазин готовых шаблонов</h1>
+			<h1 class="page-title">Магазин готовых шаблонов</h1>
         </div>
     </header>
-
     <main class="container">
         <div class="catalog-columns">
             <section class="filters">
@@ -112,94 +107,58 @@
                         <a class="side-sort-list" href="#">По типу</a>
                         <a class="side-sort-list" href="#">По названию</a>
                     </div>
-                    <button class="side-sort-bottom side-sort-active side-sort-list"><span class="visually-hidden">Индикатор переключ вниз </span></button>
-                    <button class="side-sort-top side-sort-list"><span class="visually-hidden">Индикатор переключ вверх</span></button>
+                    <a class="side-sort-bottom side-sort-active side-sort-list" href="#"><span class="visually-hidden">Индикатор переключ вниз </span></a>
+                    <a class="side-sort-top side-sort-list" href="#"><span class="visually-hidden">Индикатор переключ вверх</span></a>
                 </div>
                 <section class="catalog">
                     <h2 class="visually-hidden">Список шаблонов сайтов</h2>
                     <ul class="catalog-list">
                         <li class="catalog-item">
-                            <a href="catalog-item.html" class="catalog-item-image">
-                                <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Sedona">
-                            </a>
-                            <div class="catalog-item-hover">
-                                <a href="catalog-item.html">
-                                    <span class="catalog-item-title">Sedona</span>
-                                    <p class="catalog-category">Информационный сайт для туристов</p>
-                                </a>
-                                <p class="catalog-item-price">
+                             <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Sedona">
+                              <div class="catalog-item-hover">
+                                <span class="catalog-item-title"><a href="#">Sedona</a></span>
+                            	<p class="catalog-category">Информационный сайт для&nbsp;туристов</p>
+                                <a class="button button-item-cards" href="#">9 900 руб.</a>
+                             </div>
+                        </li>
+                        <li class="catalog-item">
+                            <img src="img/img-pink.jpg" width="360" height="576" alt="Проект приложения Pink App">
+                             <div class="catalog-item-hover">
+                                    <span class="catalog-item-title"><a href="#">Pink App</a></span>
+                                    <p class="catalog-category">Продуктовый лендинг приложения для iOS и Android</p>
                                     <a class="button button-item-cards" href="#">9 900 руб.</a>
-                                </p>
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <a href="catalog-item.html" class="catalog-item-image">
-                                <img src="img/img-pink.jpg" width="360" height="576" alt="Проект приложения Pink App">
-                            </a>
-                            <div class="catalog-item-hover">
-                                <a href="catalog-item.html">
-                                    <span class="catalog-item-title">Pink App</span>
-                                    <span class="catalog-category">Продуктовый лендинг приложения для iOS и Android</span>
-                                </a>
-                                <p class="catalog-item-price">
-                                    <a class="button button-item-cards" href="#">9 900 руб.</a>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="catalog-item">
-                            <a href="catalog-item.html" class="catalog-item-image">
                                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт салона красоты для мужчин Barbershop">
-                            </a>
                             <div class="catalog-item-hover">
-                                <a href="catalog-item.html">
-                                    <span class="catalog-item-title">Barbershop</span>
-                                    <span class="catalog-category">Сайт салона красоты. Для мужчин, да.</span>
-                                </a>
-                                <p class="catalog-item-price">
+                                    <span class="catalog-item-title"><a href="#">Barbershop</a></span>
+                                    <p class="catalog-category">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
                                     <a class="button button-item-cards" href="#">9 900 руб.</a>
-                                </p>
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <a href="catalog-item.html" class="catalog-item-image">
                                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек MISHKA">
-                            </a>
-                            <div class="catalog-item-hover">
-                                <a href="catalog-item.html">
-                                    <span class="catalog-item-title">MISHKA</span>
-                                    <span class="catalog-category">Интернет-магазин вязаных игрушек</span>
-                                </a>
-                                <p class="catalog-item-price">
+                             <div class="catalog-item-hover">
+                                    <span class="catalog-item-title"><a href="#">MISHKA</a></span>
+                                    <p class="catalog-category">Интернет-магазин вязаных&nbsp;игрушек</p>
                                     <a class="button button-item-cards" href="#">9 900 руб.</a>
-                                </p>
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <a href="catalog-item.html" class="catalog-item-image">
                                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации A Plus">
-                            </a>
                             <div class="catalog-item-hover">
-                                <a href="catalog-item.html">
-                                    <span class="catalog-item-title">A Plus </span>
-                                    <span class="catalog-category">Лендинг курсов повышения квалификации </span>
-                                </a>
-                                <p class="catalog-item-price">
+                                    <span class="catalog-item-title"><a href="#">A Plus </a></span>
+                                    <p class="catalog-category">Лендинг курсов повышения квалификации </p>
                                     <a class="button button-item-cards" href="#">9 900 руб.</a>
-                                </p>
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <a href="catalog-item.html" class="catalog-item-image">
-                                <img src="img/img-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса КВАСТ">
-                            </a>
+                                  <img src="img/img-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса КВАСТ">
                             <div class="catalog-item-hover">
-                                <a href="catalog-item.html">
-                                    <span class="catalog-item-title">КВАСТ</span>
+                                    <span class="catalog-item-title"> <a href="#">КВАСТ</a></span>
                                     <span class="catalog-category">Промо-сайт производителя крафтового кваса </span>
-                                </a>
-                                <p class="catalog-item-price">
                                     <a class="button button-item-cards" href="#">9 900 руб.</a>
-                                </p>
                             </div>
                         </li>
                     </ul>
@@ -213,17 +172,18 @@
             </div>
         </div>
     </main>
-    <footer class="main-footer  container">
-        <div class="footer-contacts-map">
-            <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5be50fe4789b28e61c7c01ed463c44ba8f6de978471f3501f246575c669ff961&amp;source=constructor" width="1440" height="415">
-            </iframe>
-            <div class="footer-contacts">
+	<footer class="main-footer  ">
+        <div class="footer-contacts-map ">
+            <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5be50fe4789b28e61c7c01ed463c44ba8f6de978471f3501f246575c669ff961&amp;source=constructor" width="1440" height="415"></iframe>
+          <div class="container map-container">
+		   <div class="footer-contacts">
                 <h4>Nёrds design studio</h4>
                 <p>191186, Санкт-Петербург, </p>
                 <p>ул. Б. Конюшенная, д. 19/8 </p>
-                <p class="footer-phone">тел. +7 (812) 275-75-75 </p>
+                <p class="footer-phone">тел. <a class="n-decor">+7 (812) 275-75-75</a></p>
                 <a href="writetous.html" class="button footer-contacts-button"> Напишите нам</a>
             </div>
+			</div>
         </div>
         <section class=" modal modal-write-to-us-form ">
             <h2 class="write-header">Напишите нам</h2>
@@ -241,26 +201,24 @@
             </form>
             <button class="modal-close">Закрыть</button>
         </section>
-        <div class="footer-social-discount">
+        <div class="footer-social-discount container">
             <div class="footer-social">
                 <ul class="social-list">
-                    <li> <a href="#" class="social-button social-button-vk"><span class="visually-hidden">Вконтакте</span>
+                    <li class="social-button social-button-vk"> <a href="#" ><span class="visually-hidden">Вконтакте</span>
 	      		 </a></li>
-
-                    <li> <a href="https://facebook.com" class="social-button social-button-fb"><span class="visually-hidden">Facebook</span>
+                    <li class="social-button social-button-fb"> <a href="#"><span class="visually-hidden">Facebook</span>
          				 </a></li>
-
-                    <li> <a href="https://instagram.com" class="social-button social-button-insta"><span class="visually-hidden">Instagram</span>
+                    <li class="social-button social-button-insta"> <a href="#" ><span class="visually-hidden">Instagram</span>
 		    		 </a></li>
                 </ul>
             </div>
-            <p class="footer-discount">
-                <b>Давайте дружить, это выгодно!</b> Скидка 10% для друзей из социальных сетей.
-            </p>
+            <div class="footer-discount">
+                <b>Давайте дружить, это выгодно!</b>
+                <p class="footer-discount-social">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </div>
     </footer>
     <div class="modal-overlay" id="modal-overlay"> </div>
     <script src="js/modal.min.js"></script>
 </body>
-
 </html>

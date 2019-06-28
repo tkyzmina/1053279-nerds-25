@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", Arial, sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -124,9 +124,9 @@ input[type="radio"].visually-hidden {
 .site-navigation-current:active::after {
 	content: "";
 	position: absolute;
-	right: 25px;
-	bottom: 5;
-	left: 25px;
+	right: 1px;
+	bottom: -6px;
+	left: 2px;
 	height: 2px;
 	background-color: #fb565a;
 }
@@ -149,6 +149,7 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle;
 	padding: 0px 0px;
 	margin-right: 47px;
+	font-weight: 500;
 }
 
 .backet-navigation a {
@@ -156,6 +157,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	vertical-align: middle;
 	padding: 0px 16px;
+	font-weight: 500;
 }
 
 .backet-navigation .backet-link {
@@ -214,10 +216,6 @@ input[type="radio"].visually-hidden {
 	opacity: 0.30;
 }
 
-.services {
-	margin-bottom: 80px;
-}
-
 .services-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -227,16 +225,18 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	margin-bottom: 80px;
 }
 
 .services-item {
 	text-align: left;
-	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 15px;
 	width: 300px;
 }
 
-.services-item-fisrt {
-	margin-left: 0px;
+.services-item:nth-of-type(3n) {
+    margin-right: 0
 }
 
 .services-img img {
@@ -260,6 +260,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	margin-bottom: 32px;
 	width: 260px;
+	color: #333333;
 }
 
 .slider {
@@ -284,6 +285,7 @@ input[type="radio"].visually-hidden {
 .slider-controls label {
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	width: 18px;
 	height: 18px;
 	padding: 8px;
@@ -373,6 +375,7 @@ input[type="radio"].visually-hidden {
 	max-width: 430px;
 	margin: 0;
 	margin-bottom: 39px;
+	color: #333333;
 }
 
 .about-achievements {
@@ -389,18 +392,40 @@ input[type="radio"].visually-hidden {
 	width: 660px;
 	margin: 0;
 	padding: 0;
-	margin-top: 46px;
+	margin-top: 63px;
 }
 
 .about p {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 32px;
+
 }
 
+.about-header {
+	position: relative;
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 45px;
+	color: #000000;
+	margin-bottom: 35px;
+}
+
+.about-header:before {
+	content: "";
+	top: -78px;
+	position: absolute;
+	width: 1160px;
+	height: 2px;
+	background-color: #eeeeee;
+}
+
+.about-line {
+	color: #333333;
+}
 .achievements {
 	width: 360px;
-	padding-top: 10px;
+	padding-top: 27px;
 }
 
 .about-list {
@@ -413,6 +438,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	margin-bottom: 25px;
 	padding-left: 36px;
+	color: #333333;
 }
 
 .about-list li:before {
@@ -423,21 +449,6 @@ input[type="radio"].visually-hidden {
 	width: 25px;
 	height: 2px;
 	background-color: #fb565a;
-}
-
-.about-header {
-	font-size: 45px;
-	font-weight: 500;
-	line-height: 45px;
-	color: #000000;
-	margin-bottom: 35px;
-}
-
-.line {
-	width: 1160px;
-	height: 2px;
-	background: #eeeeee;
-	margin-bottom: 30px;
 }
 
 .about-servises {
@@ -481,7 +492,6 @@ input[type="radio"].visually-hidden {
 	font-size:61%;
 }
 
-
 .achivements-numbers-wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -500,16 +510,9 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 35px;
 }
 
-
 .achivements-numbers p:last-child {
 	line-height: 18px;
-}
-
-.line-gallery {
-	width: 1160px;
-	height: 2px;
-	background: #eeeeee;
-	margin-bottom: 38px;
+	color: #333333;
 }
 
 .gallery-list {
@@ -548,6 +551,9 @@ input[type="radio"].visually-hidden {
 
 .gallery {
 	margin-bottom: 26px;
+    padding: 39px 0px 25px 0px;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
 }
 
 .gallery-list li {
@@ -596,7 +602,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 	width: 240px;
 	padding: 16px 0;
 	font: inherit;
@@ -605,7 +612,6 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	text-align: center;
 	color: #ffffff;
-	vertical-align: middle;
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
@@ -620,6 +626,7 @@ input[type="radio"].visually-hidden {
 
 .button-item-cards {
 	width: 200px;
+	margin-bottom: 40px;
 }
 
 .button:hover,
@@ -666,20 +673,23 @@ input[type="radio"].visually-hidden {
 	margin-top: 80px;
 }
 
+.map-container {
+	position: relative;
+}
 .inner-page .main-footer {
 	margin-top: 60px;
 }
 
 .footer-contacts-map {
 	position: relative;
-	width: 1440px;
-	height: 415px;
+	width: 100%;
+	height: 416px;
 	background-image: url(../img/map-marker.png);
 	background-repeat: no-repeat;
+	background-position: center;
 	background-color: #eeeeee;
+	margin: 0 auto;
 	margin-bottom: 70px;
-	left: 50%;
-	margin-left: -720px;
 }
 
 .footer-contacts {
@@ -694,8 +704,8 @@ input[type="radio"].visually-hidden {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	padding-left: 50px;
-	top: 54px;
-	left: 140px;
+	bottom: 64px;
+	left: 20px;
 	width: 270px;
 	background-color: #ffffff;
 }
@@ -714,6 +724,12 @@ input[type="radio"].visually-hidden {
 	margin: 0px;
 	color: #666666;
 	line-height: 18px;
+}
+.footer-phone p{
+	margin: 0px;
+	color: #666666;
+	line-height: 18px;
+	text-decoration: none;
 }
 
 .footer-contacts p:nth-child(3) {
@@ -776,52 +792,60 @@ input[type="radio"].visually-hidden {
 .footer-discount-social {
 	line-height: 22px;
 	margin: 0;
+	color: #444444;
 }
 
-.social-button-fb {
+.social-button-fb  a::after{
+	content: "";
 	display:block;
 	background-image: url(../img/fb-icon.svg);
 	background-repeat: no-repeat;
-	width: 21px;
-	height: 21px;
-	background-position: 50% 50%;	
-	}
-	
-.social-button-vk {
+	width: 78px;
+	height: 78px;
+	background-position: 50% 50%;
+}
+
+.social-button-vk a::after {
+	content: "";
 	display:block;
 	background-image: url(../img/vk-icon.svg);
 	background-repeat: no-repeat;
-	width: 21px;
-	height: 21px;
-	background-position: 50% 50%;	
-	}
-	.social-button-insta {
+    width: 78px;
+    height: 78px;
+	background-position: 50% 50%;
+}
+
+	.social-button-insta a::after {
+	content: "";
 	display:block;
 	background-image: url(../img/insta-icon.svg);
 	background-repeat: no-repeat;
-	width: 21px;
-	height: 21px;
-	background-position: 50% 50%;	
-	}
-.social-button:hover {
+    width: 78px;
+    height: 78px;
+	background-position: 50% 50%;
+}
+
+.social-button a:hover {
 	background-color: #e74246;
 }
 
-.social-button:focus {
+.social-button a:active {
 	background-color: #d7373b;
 }
 
-.social-button:focus path {
-	opacity: 0.3;
+.social-button a:active::after {
+    opacity: 0.3;
 }
-.social-button {
-	/* display: flex;
-	align-items: center;
-	justify-content: center; */
-	width: 78px;
-	height: 78px;
-	border-radius: 50%;
-	background-color: #e1e1e1;
+
+.social-button a{
+    position: relative;
+    display: block;
+    width: 78px;
+    height: 78px;
+    font-size: 0;
+    line-height: 0;
+    background-color: #e1e1e1;
+    border-radius: 50%;
 }
 
 .footer-social-discount {
@@ -835,8 +859,6 @@ input[type="radio"].visually-hidden {
 	width: 260px;
 	margin: 0;
 }
-
-
 
 .page-title {
 	font-size: 55px;
@@ -888,7 +910,7 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
-	color: #283136;
+	color: #333333;
 }
 
 .filter-option {
@@ -926,6 +948,10 @@ input[type="radio"].visually-hidden {
 	opacity: 1;
 }
 
+.filter-input-checkbox:disabled+label::before {
+	opacity: 0.3;
+}
+
 .filter-input-checkbox:checked+label::after {
 	content: "";
 	position: absolute;
@@ -955,6 +981,10 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:hover+label::before,
 .filter-input-radio:focus+label::before {
 	opacity: 1;
+}
+
+.filter-input-radio:disabled+label::before {
+	opacity: 0.3;
 }
 
 .filter-input-radio+label:focus {
@@ -1086,13 +1116,13 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 }
 
 .catalog-item {
 	position: relative;
 	width: 360px;
-	margin-bottom: 25px;
+	margin-bottom: 33px;
 	margin-left: 40px;
 	display: block;
 	-ms-flex-preferred-size: 360px;
@@ -1108,7 +1138,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	margin: 0;
 	padding: 0;
-	max-width: 210px;
+	padding: 0 60px;
 	margin-bottom: 30px;
 	text-align: center;
 }
@@ -1124,50 +1154,52 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	color: #000000;
 	text-transform: uppercase;
-	margin-bottom: 15px;
-	margin-top: 1px;
+	margin-top: 30px;
+    margin-bottom: 15px;
 	text-align: center;
 }
 
-.catalog-item-title:hover {
+.catalog-item-title a{
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.catalog-item img {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 360px;
+    height: 576px;
+    margin-top: 40px;
+    border: 1px solid rgba(0,1,1,0.1);
+    border-top: none;
+}
+
+.catalog-item-title a:hover {
 	color: #ff6666;
 }
 
-.catalog-item-title:active {
+.catalog-item-title a:active {
 	color: #000000;
 	opacity: 0.3;
 }
 
 .catalog-item-hover {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	width: 360px;
-	min-height: 230px;
-	padding: 27px;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	background-color: #eeeeee;
-	position: absolute;
-	bottom: 7px;
-	z-index: -1;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #eee;
 }
 
 .catalog-item:hover .catalog-item-hover {
-	position: absolute;
-	bottom: 7px;
-	z-index: 1;
-	opacity: 1;
+ display: block;
+}
+
+.catalog-item:hover {
+box-shadow: 0 6px 15px 0 rgba(0,1,1,0.25);
 }
 
 .catalog-item-price {
@@ -1188,12 +1220,14 @@ input[type="radio"].visually-hidden {
 
 .catalog-item::before {
 	content: "";
-	top: -39px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	background-image: url("../img/browser.svg");
 	width: 360px;
 	height: 40px;
 	opacity: 0.12;
-	display: block;
+
 }
 
 .catalog-item:hover::before {
@@ -1230,8 +1264,8 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item-current a {
-	padding: 14px 18px;
-	border: 2px solid #eeeeee;
+	padding: 13px 18px;
+	border: 3px solid #eeeeee;
 	background-color: transparent;
 }
 
@@ -1322,11 +1356,13 @@ input[type="radio"].visually-hidden {
 
 .form-comment {
 	display: block;
-	width: 730px;
+	width: 726px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
-	padding: 10px 15px;
+	padding: 10px 15px 0 15px;
+	resize: none;
+	height: 103px;
 }
 
 .write-header {
@@ -1343,7 +1379,7 @@ input[type="radio"].visually-hidden {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 360px;
-	padding: 15px 15px;
+	padding: 14px 15px;
 	padding-right: 40px;
 	font-size: 16px;
 	line-height: 18px;
@@ -1359,13 +1395,14 @@ input[type="radio"].visually-hidden {
 
 .form-text-area {
 	width: 100%;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	margin-top: 5px;
 }
 
 .modal-close {
 	position: absolute;
-	right: 80px;
-	top: 83px;
+	right: 85px;
+	top: 80px;
 	font-size: 0;
 	width: 27px;
 	height: 27px;
@@ -1407,7 +1444,7 @@ input[type="radio"].visually-hidden {
 	background-color: transparent;
 	border: 2px solid #d7dcde;
 	color: #999999;
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 	margin-top: 10px;
 }
 
@@ -1596,10 +1633,12 @@ input[type="radio"].visually-hidden {
 
 .price-controls {
 	font-size: 0;
+	color: #333333;
 }
 
 .price-controls label {
 	display: inline-block;
+	vertical-align: middle;
 	width: 50%;
 	font-size: 16px;
 	line-height: 22px;
@@ -1614,7 +1653,7 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	line-height: 22px;
 	text-align: center;
-	color: #283136;
+	color: #333333;
 	border: none;
 	border-radius: 5px;
 	background: #f1f1f1;
@@ -1641,5 +1680,10 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 29px;
 }
 .yandex-map{
-border: none;
+  border: none;
+  width: 100%;
+  height: 416px;
+}
+.n-decor {
+	text-decoration: none;
 }

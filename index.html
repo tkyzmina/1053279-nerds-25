@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Нёрдс»</title>
@@ -8,13 +7,11 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
 </head>
-
 <body>
     <header class="main-header">
-
         <div class="container">
             <nav class="main-navigation">
-                <a class="main-header-logo" href="#">
+                <a class="main-header-logo">
                     <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
                 </a>
                 <div class="site-navigation-wrapper">
@@ -30,7 +27,6 @@
                 </div>
             </nav>
         </div>
-
         <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
         <section class="slider">
             <div class="container">
@@ -71,7 +67,7 @@
         </section>
     </header>
     <main class="container">
-        <section class="services">
+        <section>
             <ul class="services-list">
                 <li class="services-item services-item-fisrt ">
                     <a href="#" class="services-img"> <img src="img/illustration-1.jpg" width="300" height="146" alt="Интернет сайт"></a>
@@ -93,12 +89,10 @@
                 </li>
             </ul>
         </section>
-        <div class="line"></div>
-        <div class="about-achievements">
-
+         <div class="about-achievements">
             <section class="about">
                 <p class="about-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <p class="about-line">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
                 <section class="about-servises">
                     <h4>Выполняем заказы на разработку:</h4>
                     <ul class="about-list">
@@ -127,8 +121,7 @@
                 </div>
             </section>
         </div>
-        <div class=" line-gallery"></div>
-        <section class="gallery">
+             <section class="gallery">
             <ul class="gallery-list ">
                 <li class="gallery-item gallery-list-devider">
                     <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-1.png" width="199" height="68" alt="логотип HTML-Academy"></a>
@@ -143,56 +136,45 @@
                     <a href="#"> <img src="img/logo-4.png" width="173" height="84" alt="логотип интернет-магазина Mishka"></a>
                 </li>
             </ul>
-
         </section>
-        <div class="line"></div>
-    </main>
-
-    <footer class="main-footer  ">
-
+            </main>
+   <footer class="main-footer  ">
         <div class="footer-contacts-map ">
             <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5be50fe4789b28e61c7c01ed463c44ba8f6de978471f3501f246575c669ff961&amp;source=constructor" width="1440" height="415"></iframe>
-            <div class="footer-contacts">
+          <div class="container map-container">
+		   <div class="footer-contacts">
                 <h4>Nёrds design studio</h4>
                 <p>191186, Санкт-Петербург, </p>
                 <p>ул. Б. Конюшенная, д. 19/8 </p>
-                <p class="footer-phone">тел. +7 (812) 275-75-75 </p>
+                <p class="footer-phone">тел. <a class="n-decor">+7 (812) 275-75-75</a></p>
                 <a href="writetous.html" class="button footer-contacts-button"> Напишите нам</a>
             </div>
+			</div>
         </div>
-
         <section class=" modal modal-write-to-us-form ">
             <h2 class="write-header">Напишите нам</h2>
             <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
-
                 <label class="form-text-field">Ваше имя:
                     <input id="form-name" type="text" name="login" placeholder="Имя Фамилия">
                 </label>
-
                 <label class="form-text-field">Ваш e-mail:
                     <input id="form-mail" type="email" name="email" placeholder="email@example.com">
                 </label>
-
                 <label class="form-text-area">Текст письма:
                     <textarea id="id-form-comment" class="form-comment" name="comment" rows="4" placeholder="В свободной форме"></textarea>
                 </label>
-
                 <button class="button button-modal " type="submit">ОТПРАВИТЬ</button>
-
             </form>
             <button class="modal-close">Закрыть</button>
         </section>
-
         <div class="footer-social-discount container">
             <div class="footer-social">
                 <ul class="social-list">
-                    <li> <a href="#" class="social-button social-button-vk"><span class="visually-hidden">Вконтакте</span>
+                    <li class="social-button social-button-vk"> <a href="#" ><span class="visually-hidden">Вконтакте</span>
 	      		 </a></li>
-
-                    <li> <a href="https://facebook.com" class="social-button social-button-fb"><span class="visually-hidden">Facebook</span>
+                    <li class="social-button social-button-fb"> <a href="#"><span class="visually-hidden">Facebook</span>
          				 </a></li>
-
-                    <li> <a href="https://instagram.com" class="social-button social-button-insta"><span class="visually-hidden">Instagram</span>
+                    <li class="social-button social-button-insta"> <a href="#" ><span class="visually-hidden">Instagram</span>
 		    		 </a></li>
                 </ul>
             </div>
@@ -205,5 +187,4 @@
     <div class="modal-overlay" id="modal-overlay"> </div>
     <script src="js/modal.min.js"></script>
 </body>
-
 </html>
