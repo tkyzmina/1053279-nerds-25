@@ -588,7 +588,7 @@ img {
   opacity: 1;
 }
 
-.gallery-item:active {
+.gallery-item a:active {
   opacity: 0.10;
 }
 
